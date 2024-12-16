@@ -23,7 +23,7 @@ export const Signin = () => {
         }} placeholder="123456" label={"Password"} />
         <div className="pt-4">
           <Button label={"Sign in"} onClick={async()=>{
-            const res = await axios.post("http://localhost:3000/api/v1/user/signin",{
+            const res = await axios.post(`${BACKEND_URL}/api/v1/user/signin`,{
               username,
               password
             })
