@@ -1,6 +1,7 @@
 import { useSearchParams } from 'react-router-dom';
 import axios from "axios";
 import { useState } from 'react';
+import { BACKEND_URL } from '../../url';
 
 export const SendMoney = () => {
     const [searchParams] = useSearchParams();
